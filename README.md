@@ -2,7 +2,7 @@
 
 _Extensible web application for exploring natural languages_
 
-![Main page](https://github.com/giancosta86/jardinero/blob/main/screenshots/main.png)
+![(main page screenshot)](screenshots/main.png)
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Jardinero's user interface enables users to:
 
 - **re-create the dictionary**, especially when the data source gets frequent updates
 
-![Pipeline](https://github.com/giancosta86/jardinero/blob/main/screenshots/pipeline.png)
+![(pipeline screenshot)](screenshots/pipeline.png)
 
 ## Installation
 
