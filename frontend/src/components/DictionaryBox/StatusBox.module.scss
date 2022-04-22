@@ -1,0 +1,17 @@
+.statusBox {
+    display: flex;
+    flex-flow: column;
+    border: 2px solid darkgreen;
+    color: rgb(1, 51, 1);
+    background: #a4dfa9;
+    width: 40%;
+    padding: 1em;
+}
+
+.errorInLatestPipeline {
+    margin-top: 0.5em;
+    background: #ffd6d6;
+    color: rgb(94, 2, 2);
+    width: 100%;
+    word-wrap: break-word;
+}

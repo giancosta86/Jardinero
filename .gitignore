@@ -1,0 +1,12 @@
+.pytest_cache/
+.mypy_cache/
+__pycache__/
+node_modules/
+
+/.venv/
+/src/info/gianlucacosta/jardinero/static/*
+/.coverage
+/htmlcov/
+/dist/
+
+frontend/bundle-report.html

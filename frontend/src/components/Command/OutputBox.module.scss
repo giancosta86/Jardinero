@@ -1,0 +1,37 @@
+.outputBox {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.8em;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+
+    table {
+        background: white;
+
+        thead {
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 0.3em;
+
+            text-align: center;
+        }
+    }
+}
+
+.errorBox {
+    border-radius: 1.5em;
+    border: 2px solid maroon;
+    background: #ffd6d6;
+    color: maroon;
+    padding: 1em;
+}
+
+.countBox {
+    margin-top: 0.8em;
+    margin-bottom: 0.6em;
+}

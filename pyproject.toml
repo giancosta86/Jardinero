@@ -1,0 +1,171 @@
+[tool.poetry]
+
+name = 'info.gianlucacosta.jardinero'
+
+version = '1.0.0'
+
+description = 'Extensible web application for exploring natural languages'
+
+authors = ['Gianluca Costa <gianluca@gianlucacosta.info>']
+
+license = 'MIT'
+
+readme = 'README.md'
+
+repository = 'https://github.com/giancosta86/Jardinero'
+
+documentation = 'https://github.com/giancosta86/Jardinero'
+
+keywords = [
+  'dictionary',
+  'Wiktionary',
+  'wiki',
+  'pages',
+  'extract',
+  'terms',
+  'Python',
+  'TypeScript',
+  'React',
+]
+
+classifiers = [
+  'Development Status :: 5 - Production/Stable',
+  'Environment :: Web Environment',
+  'Intended Audience :: Developers',
+  'License :: OSI Approved :: MIT License',
+  'Operating System :: OS Independent',
+  'Programming Language :: Python',
+  'Topic :: Text Processing :: Linguistic',
+]
+
+packages = [{ include = 'info', from = 'src' }]
+
+include = ["src/info/gianlucacosta/jardinero/static/*"]
+
+
+[tool.poetry.dependencies]
+python = '^3.10'
+Flask = '^2.0.3'
+Flask-SocketIO = '^5.1.1'
+requests = '^2.27.1'
+eventlet = '^0.33.0'
+"info.gianlucacosta.wikiprism" = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = '^6.0'
+black = '^22.1.0'
+poethepoet = '^0.13.1'
+mypy = '^0.942'
+types-requests = '^2.27.15'
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+twine = "^4.0.0"
+"info.gianlucacosta.cervantes" = "^1.1.0"
+
+
+[build-system]
+
+requires = ['poetry-core>=1.0.0']
+build-backend = 'poetry.core.masonry.api'
+
+
+[tool.isort]
+
+profile = "black"
+line_length = 99
+
+
+[tool.black]
+
+line-length = 99
+
+
+[tool.mypy]
+
+mypy_path = ['$MYPY_CONFIG_FILE_DIR/src', '$MYPY_CONFIG_FILE_DIR/stubs']
+
+python_version = '3.10'
+
+namespace_packages = true
+explicit_package_bases = true
+
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+show_error_codes = true
+
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_any_generics = true
+
+
+[[tool.mypy.overrides]]
+
+module = 'tests.*'
+
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+
+[tool.poe.tasks]
+
+check = ['check-imports', 'check-format', 'check-types', 'check-style', 'test']
+
+test = 'pytest tests'
+
+sort-imports = 'isort src stubs tests'
+
+format = 'black src stubs tests'
+
+check-imports = 'isort --check-only src stubs tests'
+
+check-format = 'black --check --color src stubs tests'
+
+check-types = 'mypy src stubs tests'
+
+check-style = 'flake8 src stubs tests'
+
+pre-build = ['check', 'setup-frontend', 'build-frontend']
+
+post-build = ['check-artifacts']
+
+check-artifacts = 'twine check dist/*'
+
+start-cervantes = 'python -m info.gianlucacosta.jardinero info.gianlucacosta.cervantes'
+
+start-static = 'python -m http.server --directory $HOME/Downloads'
+
+start-cervantes-prod = 'python -OO -m info.gianlucacosta.jardinero info.gianlucacosta.cervantes'
+
+
+[tool.poe.tasks.clean]
+
+shell = '''
+  rm -rf dist
+  rm -rf htmlcov
+  rm -rf src/info/gianlucacosta/static
+  rm -rf frontend/node_modules
+  rm .coverage
+'''
+
+
+[tool.poe.tasks.setup-frontend]
+shell = '''
+  cd frontend
+  yarn
+'''
+
+
+[tool.poe.tasks.start-frontend]
+shell = '''
+  cd frontend
+  yarn start
+'''
+
+
+[tool.poe.tasks.build-frontend]
+shell = '''
+  cd frontend
+  yarn build
+'''

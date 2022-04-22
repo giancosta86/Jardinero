@@ -1,0 +1,35 @@
+.pipelineBox {
+    border: 2px solid darkgreen;
+    background: white;
+
+    width: 40%;
+    padding: 0.5em;
+
+    * {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    button {
+        max-width: 85%;
+        padding: 0.75em;
+        font-weight: bold;
+        border-radius: 0.75em;
+    }
+}
+
+.startButton {
+    background: #3dce47;
+    color: rgb(0, 49, 0);
+    font-size: 1em;
+}
+
+.cancelButton {
+    background: #c2424a;
+    color: rgb(49, 0, 0);
+    font-size: 0.75em;
+}
+
+.spinner {
+    height: 5em;
+}
