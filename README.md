@@ -38,6 +38,10 @@ Jardinero's user interface enables users to:
 
 ![(pipeline screenshot)](screenshots/pipeline.png)
 
+## Requirements
+
+Jardinero requires at least **Python 3.10** - available at [Python's official website](https://www.python.org/) or via your operating system's package manager.
+
 ## Installation
 
 You can install Jardinero just like any other PyPI package for your Python distribution:
