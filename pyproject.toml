@@ -169,3 +169,10 @@ shell = '''
   cd frontend
   yarn build
 '''
+
+
+[tool.poe.tasks.build-slides]
+shell = '''
+  cd slides
+  yarn build
+'''
