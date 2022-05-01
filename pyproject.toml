@@ -153,7 +153,7 @@ shell = '''
 [tool.poe.tasks.setup-frontend]
 shell = '''
   cd frontend
-  yarn
+  yarn install --frozen-lockfile
 '''
 
 
