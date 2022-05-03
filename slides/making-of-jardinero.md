@@ -109,7 +109,7 @@ a,
   }
 </style>
 
-<!-- footer: "Latest update: 2022-04-29"  -->
+<!-- footer: "Latest update: 2022-05-03"  -->
 
 ### Gianluca Costa [:butterfly:](https://gianlucacosta.info/)
 
@@ -417,7 +417,7 @@ Even after WikiPrism became a standalone project, **Cervantes** was still integr
 
 ---
 
-# «El broche de oro» - the final touch
+# «El broche de oro» - the finishing touch
 
 **Writing the documentation** actually led to a couple of interesting breakthroughs that contributed to _further simplification_ - thus achieving a more _coherent_, **minimalist** model.
 
