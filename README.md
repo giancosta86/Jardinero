@@ -26,8 +26,6 @@ While developing the project, I felt it would be nice to extend the approach to 
 
 As a core aspect, the architecture can be easily _extended_ by creating Python modules and packages named _linguistic modules_.
 
-To explore in detail how the whole system works, as well as its creation process, please consult **my presentation on SpeakerDeck**: [The making of Jardinero](https://speakerdeck.com/giancosta86/the-making-of-jardinero).
-
 ## Main features
 
 Jardinero's user interface enables users to:
@@ -38,7 +36,13 @@ Jardinero's user interface enables users to:
 
 - **re-create the dictionary**, especially when the data source gets frequent updates
 
-![(pipeline screenshot)](screenshots/pipeline.png)
+![(Pipeline screenshot)](screenshots/pipeline.png)
+
+## Presentation on SpeakerDeck
+
+To explore in detail how the overall architecture works, as well as the purpose and the creation process of its components, please consult **my presentation on SpeakerDeck**: [The making of Jardinero](https://speakerdeck.com/giancosta86/the-making-of-jardinero).
+
+[![(Presentation preview)](slides/preview.png)](https://speakerdeck.com/giancosta86/the-making-of-jardinero)
 
 ## Requirements
 
