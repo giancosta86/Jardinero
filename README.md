@@ -26,6 +26,8 @@ While developing the project, I felt it would be nice to extend the approach to 
 
 As a core aspect, the architecture can be easily _extended_ by creating Python modules and packages named _linguistic modules_.
 
+To explore in detail how the whole system works, as well as its creation process, please consult **my presentation on SpeakerDeck**: [The making of Jardinero](https://speakerdeck.com/giancosta86/the-making-of-jardinero).
+
 ## Main features
 
 Jardinero's user interface enables users to:
@@ -149,6 +151,8 @@ Of course, there are limitations: if you need advanced features like pagination,
 Then, you can also use your favorite database explorer - such as the excellent, open source [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 ## Further references
+
+[The making of Jardinero](https://speakerdeck.com/giancosta86/the-making-of-jardinero) - _Story of a software engineer who wanted to learn Spanish_
 
 [Cervantes](https://github.com/giancosta86/Cervantes) - Extract a compact Spanish dictionary from Wikcionario, with elegance
 
