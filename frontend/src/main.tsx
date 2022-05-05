@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { App } from "./App";
 
 function getBackendPort(): number {
@@ -13,4 +13,4 @@ const websocketPort = getBackendPort();
 const rootElement = document.createElement("div");
 document.body.append(rootElement);
 
-ReactDOM.render(<App websocketPort={websocketPort} />, rootElement);
+ReactDOM.createRoot(rootElement).render(<App websocketPort={websocketPort} />);
