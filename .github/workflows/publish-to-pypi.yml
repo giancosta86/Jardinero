@@ -16,6 +16,10 @@ jobs:
         with:
           python-version: "3.10"
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: "frontend/.nvmrc"
+
       - run: pip install poetry==1.1.13
 
       - run: poetry install
