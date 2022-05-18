@@ -9,66 +9,61 @@ import { DictionaryStatus } from "./protocol";
 import "./styles/globals.scss";
 
 interface Props {
-    websocketPort: number;
+  websocketPort: number;
 }
 
 export const App = ({ websocketPort }: Props) => {
-    const [dictionaryStatus, setDictionaryStatus] = useState<DictionaryStatus>(
-        () => ({
-            statusMessage: null,
-            pipelineMessage: null,
-            errorInPreviousPipeline: null
-        })
-    );
+  const [dictionaryStatus, setDictionaryStatus] = useState<DictionaryStatus>(
+    () => ({
+      statusMessage: null,
+      pipelineMessage: null,
+      errorInPreviousPipeline: null
+    })
+  );
 
-    const {
-        response: commandResponse,
-        running: commandRunning,
-        startRunning,
-        responseListener: commandResponseListener
-    } = useCommandState();
+  const {
+    response: commandResponse,
+    running: commandRunning,
+    startRunning,
+    responseListener: commandResponseListener
+  } = useCommandState();
 
-    const dictionaryControl = useBackendWebSocket(
-        websocketPort,
-        setDictionaryStatus,
-        commandResponseListener
-    );
+  const dictionaryControl = useBackendWebSocket(
+    websocketPort,
+    setDictionaryStatus,
+    commandResponseListener
+  );
 
-    const hasDictionary = dictionaryStatus.statusMessage != null;
+  const hasDictionary = dictionaryStatus.statusMessage != null;
 
-    const runCommand = (command: string) => {
-        startRunning();
-        dictionaryControl.runCommand(command);
-    };
+  const runCommand = (command: string) => {
+    startRunning();
+    dictionaryControl.runCommand(command);
+  };
 
-    return (
-        <div className="main">
-            <header>
-                <img className="logo" src={logo}></img>
-            </header>
+  return (
+    <div className="main">
+      <header>
+        <img className="logo" src={logo}></img>
+      </header>
 
-            {hasDictionary && (
-                <CommandBox
-                    runCommand={runCommand}
-                    commandRunning={commandRunning}
-                />
-            )}
+      {hasDictionary && (
+        <CommandBox runCommand={runCommand} commandRunning={commandRunning} />
+      )}
 
-            <OutputBox commandResponse={commandResponse} />
+      <OutputBox commandResponse={commandResponse} />
 
-            <DictionaryBox
-                dictionaryStatus={dictionaryStatus}
-                startPipeline={dictionaryControl.startPipeline}
-                cancelPipeline={dictionaryControl.cancelPipeline}
-            />
+      <DictionaryBox
+        dictionaryStatus={dictionaryStatus}
+        startPipeline={dictionaryControl.startPipeline}
+        cancelPipeline={dictionaryControl.cancelPipeline}
+      />
 
-            <footer>
-                Created by{" "}
-                <a href="https://gianlucacosta.info/">Gianluca Costa</a> using{" "}
-                <a href="https://github.com/giancosta86/Eos-core">Eos-core</a>{" "}
-                and{" "}
-                <a href="https://github.com/giancosta86/WikiPrism">WikiPrism</a>{" "}
-            </footer>
-        </div>
-    );
+      <footer>
+        Created by <a href="https://gianlucacosta.info/">Gianluca Costa</a>{" "}
+        using <a href="https://github.com/giancosta86/Eos-core">Eos-core</a> and{" "}
+        <a href="https://github.com/giancosta86/WikiPrism">WikiPrism</a>{" "}
+      </footer>
+    </div>
+  );
 };

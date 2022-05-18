@@ -1,19 +1,19 @@
 export interface DictionaryStatus {
-    statusMessage: string | null;
-    pipelineMessage: string | null;
-    errorInPreviousPipeline: string | null;
+  statusMessage: string | null;
+  pipelineMessage: string | null;
+  errorInPreviousPipeline: string | null;
 }
 
 export type DictionaryStatusListener = (
-    backendStatus: DictionaryStatus
+  backendStatus: DictionaryStatus
 ) => void;
 
 export interface CommandResponse {
-    exception: string | null;
-    headers: string[] | null;
-    rows: any[][] | null;
+  exception: string | null;
+  headers: string[] | null;
+  rows: any[][] | null;
 }
 
 export type CommandResponseListener = (
-    commandResponse: CommandResponse
+  commandResponse: CommandResponse
 ) => void;

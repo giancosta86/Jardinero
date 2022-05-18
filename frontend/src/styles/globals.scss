@@ -1,42 +1,42 @@
 @import "reset.css";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background: #cafff0;
+  background: #cafff0;
 }
 
 label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a {
-    &:link,
-    &:visited {
-        color: rgb(0, 58, 0);
-        font-weight: bold;
-        font-style: normal;
-        text-decoration: none;
-    }
+  &:link,
+  &:visited {
+    color: rgb(0, 58, 0);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+  }
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
 }
 
 img.logo {
-    height: 8em;
+  height: 8em;
 }
 
 footer {
-    margin-top: 1.25em;
-    border-top: 1px dashed darkgreen;
-    padding-top: 0.75em;
-    padding-bottom: 0.5em;
-    font-style: italic;
+  margin-top: 1.25em;
+  border-top: 1px dashed darkgreen;
+  padding-top: 0.75em;
+  padding-bottom: 0.5em;
+  font-style: italic;
 }
