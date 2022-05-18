@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { CommandBox } from "./components/Command/InputBox";
 import { OutputBox } from "./components/Command/OutputBox";
 import { DictionaryBox } from "./components/DictionaryBox";
@@ -13,10 +13,6 @@ interface Props {
 }
 
 export const App = ({ websocketPort }: Props) => {
-    useEffect(() => {
-        document.documentElement.setAttribute("data-color-mode", "light");
-    }, []);
-
     const [dictionaryStatus, setDictionaryStatus] = useState<DictionaryStatus>(
         () => ({
             statusMessage: null,
