@@ -2,7 +2,7 @@
 
 name = 'info.gianlucacosta.jardinero'
 
-version = '1.1.0-rc.1'
+version = '1.1.0-rc.2'
 
 description = 'Extensible web application for exploring natural languages'
 
@@ -40,7 +40,7 @@ classifiers = [
 
 packages = [{ include = 'info', from = 'src' }]
 
-include = ["src/info/gianlucacosta/jardinero/static/*"]
+include = ["src/info/gianlucacosta/jardinero/static/**/*"]
 
 
 [tool.poetry.dependencies]
