@@ -115,7 +115,7 @@ a,
 
 ## The making of
 
-![height:380px](../frontend/src/logo.svg)
+![height:380px](../logo.svg)
 
 #### Story of a software engineer who wanted to learn Spanish
 

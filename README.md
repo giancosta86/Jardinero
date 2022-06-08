@@ -86,21 +86,25 @@ By omitting the **-OO** (and even the **-O**) flag, Jardinero will start in _dev
 
 - More fine-grained **logging**
 
-- **HTTP redirection** to the Webpack development server
+- **HTTP redirection** to the frontend development server
 
 - Python's **\_\_debug\_\_** global variable set to **true** - for example, in this case, Cervantes downloads from localhost and not from Wikcionario's official website
 
 For simplicity, Jardinero's TOML project includes auxiliary scripts:
 
-- Webpack's frontend development server, in watch mode:
+- Install the frontend as an NPM package:
 
   ```bash
-  poetry run poe setup-frontend
+  poetry run poe install-frontend
   ```
+
+  After that, to start the frontend server during development, you can run:
 
   ```bash
   poetry run poe start-frontend
   ```
+
+  Alternatively, for better debugging introspection, you can always run **yarn start** on the related project - to start Webpack's dev server
 
 - Python's static HTTP server, serving files from your **$HOME/Downloads** directory:
 

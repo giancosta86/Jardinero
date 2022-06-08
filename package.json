@@ -1,0 +1,10 @@
+{
+  "name": "frontend-dependencies",
+  "private": true,
+  "engines": {
+    "node": ">=17.1.0"
+  },
+  "dependencies": {
+    "@giancosta86/jardinero-frontend": "^1.1.0-rc.19"
+  }
+}

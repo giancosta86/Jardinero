@@ -8,7 +8,7 @@ PORT = 7000
 
 APP_URL = f"http://localhost:{PORT}/"
 
-WEBPACK_SERVER_URL = "http://localhost:8080"
+FRONTEND_SERVER_URL = "http://localhost:8080"
 
 PER_USER_HOME_DIRECTORY = join(Path.home(), ".jardinero")
 

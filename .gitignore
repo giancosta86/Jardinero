@@ -4,12 +4,10 @@ __pycache__/
 node_modules/
 
 /.venv/
-/src/info/gianlucacosta/jardinero/static/*
+/src/info/gianlucacosta/jardinero/static/
 /.coverage
 /htmlcov/
 /dist/
-
-frontend/bundle-report.html
 
 *.dia~
 slides/*.pdf
