@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@giancosta86/jardinero-frontend@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@giancosta86/jardinero-frontend/-/jardinero-frontend-2.0.0.tgz#1b8e7692927d858128509a1722d651ca7c3134a0"
-  integrity sha512-jFGtcX+RDAPjV076ypI/qFvoTJMPb8+hIqO+nhO+8gFrXCN+YdtKl0++vSiKlGYHyDusZQWE7X1FH4g+WuYAHw==
+"@giancosta86/jardinero-frontend@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@giancosta86/jardinero-frontend/-/jardinero-frontend-2.1.0.tgz#5ce2fc1c7e45f31365a434cc6b50d1806717576c"
+  integrity sha512-1oEe2gmCiJC3wpq0x2EIfATMh9/DYZvf3DKGaWYifsdUjTTZc0YTsSsJrun+ayA9cIrVQwFOuyvuIXC6vg9kXQ==
   dependencies:
     finalhandler "^1.2.0"
     fs-extra "^10.1.0"
