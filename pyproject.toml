@@ -146,7 +146,7 @@ shell = '''
   rm -rf htmlcov
   rm -rf src/info/gianlucacosta/jardinero/static
   rm -rf node_modules
-  rm .coverage
+  rm -rf .coverage
 '''
 
 
