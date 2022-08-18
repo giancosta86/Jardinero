@@ -5,6 +5,6 @@
     "node": ">=17.1.0"
   },
   "dependencies": {
-    "@giancosta86/jardinero-frontend": "^2.1.0"
+    "@giancosta86/jardinero-frontend": "^2.4.0"
   }
 }
