@@ -3,9 +3,6 @@
   "license": "MIT",
   "description": "Slide project",
   "scripts": {
-    "build": "npx @marp-team/marp-cli making-of-jardinero.md --allow-local-files --pdf"
-  },
-  "dependencies": {
-    "@marp-team/marp-cli": "^1.7.2"
+    "build": "npx --yes @marp-team/marp-cli@^1.7.2 making-of-jardinero.md --allow-local-files --pdf"
   }
 }
