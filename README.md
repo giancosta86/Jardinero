@@ -2,7 +2,7 @@
 
 _Extensible web application for exploring natural languages_
 
-![(main page screenshot)](screenshots/main.png)
+![(main page screenshot)](docs/screenshots/main.png)
 
 ## Introduction
 
@@ -36,13 +36,13 @@ Jardinero's user interface enables users to:
 
 - **re-create the dictionary**, especially when the data source gets frequent updates
 
-![(Pipeline screenshot)](screenshots/pipeline.png)
+![(Pipeline screenshot)](docs/screenshots/pipeline.png)
 
 ## Presentation on SpeakerDeck
 
 To explore in detail how the overall architecture works, as well as the purpose and the creation process of its components, please consult **my presentation on SpeakerDeck**: [The making of Jardinero](https://speakerdeck.com/giancosta86/the-making-of-jardinero).
 
-[![(Presentation preview)](slides/preview.png)](https://speakerdeck.com/giancosta86/the-making-of-jardinero)
+[![(Presentation preview)](docs/slides/preview.png)](https://speakerdeck.com/giancosta86/the-making-of-jardinero)
 
 ## Requirements
 

@@ -170,7 +170,7 @@ shell = '''
 
 [tool.poe.tasks.build-slides]
 shell = '''
-  cd slides
+  cd docs/slides
   rm making-of-jardinero.pdf
   yarn build
 '''

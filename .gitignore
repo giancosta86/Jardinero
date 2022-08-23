@@ -10,4 +10,4 @@ node_modules/
 /dist/
 
 *.dia~
-slides/*.pdf
+docs/slides/*.pdf
