@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\WikiPrism"
+	},
+	{
+		"path": "..\\Cervantes"
+	},
+	{
+		"path": "..\\Eos-core"
+	}
+],
+  "settings": {}
+}
